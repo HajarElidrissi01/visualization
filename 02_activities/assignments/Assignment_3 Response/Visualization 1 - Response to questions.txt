@@ -1,0 +1,30 @@
+ For the visualization of Toronto bikes daily total trips for the year of 2022: 
+ Link to the data set: https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/?utm_source=chatgpt.com
+
+    > What software did you use to create your data visualization?
+      I used Python in a Jupyter Notebook, primarily using pandas (to clean and aggregate the monthly CSV files) and matplotlib (to create the line chart of daily trips).
+    
+    > Who is your intended audience? 
+     My intended audience is Toronto residents, City of Toronto transportation planners, and Bike Share Toronto operations staff who may be interested in understanding how ridership changes across the year.
+    
+    > What information or message are you trying to convey with your visualization? 
+     The visualization shows how Bike Share ridership changes over time in 2022 by plotting the number of trips per day. The main message is that Bike Share use is not constant: it fluctuates across the year and typically reflects seasonal patterns (higher usage in warmer months and lower usage in colder months), which can inform planning and resource allocation.
+    
+    > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
+     I focused on clarity, readability, and truthful representation. I used a simple line chart because it clearly communicates change over time. I added an informative title, labeled both axes, and used a clean layout (avoiding unnecessary decorative elements). I also ensured the time axis was correctly formatted by converting the date column to datetime and aggregating consistently at the daily level.
+
+    > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
+     The visualization is reproducible because the entire workflow is scripted: importing all 12 monthly CSV files, combining them into one dataset, converting dates, aggregating trips per day, and producing the plot. Anyone with the same folder of CSV files can rerun the notebook and regenerate the exact same figure. Since Python code is reproducible by design, reproducibility is strong as long as the dataset version and code are shared (e.g., in a GitHub repo).
+    
+    > How did you ensure that your data visualization is accessible?  
+     I aimed for accessibility by using a high-contrast, single-line plot, large enough figure size, clear labeling, and avoiding the use of color as the only way to interpret the chart.
+    
+    > Who are the individuals and communities who might be impacted by your visualization?  
+     This visualization could impact Bike Share users, cyclists, and neighborhood communities if it influences where and when resources are allocated (for example, decisions about winter service, station expansion, or rebalancing). It could also shape broader public perceptions of cycling as transportation. Because ridership levels can reflect access to safe cycling infrastructure and station placement, communities that are underserved by cycling infrastructure may be indirectly impacted by how the results are interpreted.
+    
+    > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
+     I included only the fields needed to answer the question “how does ridership change over time?” Specifically, I used the trip start time to aggregate trips by day and the trip count (number of records) as the measure of ridership. I excluded station-level details, trip duration, and other columns because they were not necessary for a time-series trend plot and could distract from the main message.
+    
+    > What ‘underwater labour’ contributed to your final data visualization product?
+     A lot of the work happened before plotting: downloading and organizing the files, writing code to automatically load 12 separate monthly CSVs, merging them, checking column names, converting the start time into a consistent datetime format, removing invalid/missing timestamps, and confirming that the aggregation step (resampling by day) was correct.
+ 

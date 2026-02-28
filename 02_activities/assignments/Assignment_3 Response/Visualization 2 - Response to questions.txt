@@ -1,0 +1,29 @@
+ For the visualization of Toronto bikes daily total trips per user type: 
+ Link to the data set: https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/?utm_source=chatgpt.com
+
+>What software did you use to create your data visualization?
+I used Microsoft Excel to create a Pivot Table and bar chart comparing total Bike Share trips by user type (Member vs Casual) for 2022.
+
+>Who is your intended audience?
+The intended audience includes City of Toronto transportation planners, Bike Share Toronto administrators, and Toronto residents interested in understanding who uses the bike share system.
+
+>What information or message are you trying to convey with your visualization?
+This visualization shows the distribution of trips between Members and Casual users. The goal is to understand whether Bike Share Toronto is primarily used by registered annual members (suggesting commuting or regular use) or by casual users (suggesting tourism or recreational use). This distinction provides insight into the system’s role in urban mobility.
+
+>What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots?
+I chose a simple bar chart because it clearly compares two categories. I avoided using a pie chart, as bar charts allow easier comparison of magnitudes. I used clear axis labels and a descriptive title. I kept the color scheme simple and avoided unnecessary decorative elements to maintain clarity and professionalism.
+
+>How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization?
+Excel is less reproducible than Python because the steps are performed through a graphical interface. However, I documented the process of creating the Pivot Table and chart so that someone else could follow the same steps. Unlike Python code, the process requires manual replication, which slightly reduces reproducibility.
+
+>How did you ensure that your data visualization is accessible?
+I used high-contrast default colors and avoided relying solely on color to communicate differences. The chart includes clear axis labels and a descriptive title so viewers can interpret it without additional explanation. The simplicity of two categories also improves accessibility.
+
+>Who are the individuals and communities who might be impacted by your visualization?
+This visualization could influence how the City allocates resources or markets the Bike Share program. If most trips come from Members, policies may prioritize commuter infrastructure. If Casual use is significant, the system may be framed as serving tourism and recreation. These interpretations can affect funding and expansion decisions that impact neighborhoods across Toronto.
+
+>How did you choose which features of your chosen dataset to include or exclude from your visualization?
+I focused only on the user type field and total trip counts because the goal was to compare usage by membership category. I excluded time, station, and duration variables since they were not necessary for this specific comparison.
+
+>What ‘underwater labour’ contributed to your final data visualization product?
+The primary hidden work involved merging 12 monthly CSV files into one dataset, cleaning and standardizing the user type column, checking for missing or inconsistent labels (e.g., “Member” vs “Annual Member”), and exporting a clean file for Excel analysis. This preparation ensured that the final chart accurately reflected usage patterns.
